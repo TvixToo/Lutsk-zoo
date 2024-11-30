@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Луцький зоопарк</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Луцький зоопарк</h1>
+        <nav>
+            <ul>
+                <li><a href="#facts">Цікаві факти про зоопарк</a></li>
+                <li><a href="#animals">деякі тварини зоопарку</a></li>
+                <li><a href="#specific-animals">Факти про деяких тварин</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+                <li><a href="#video">Відео про зоопарк</a></li>
+                <li><a href="#cost">Ціни</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="facts">
+            <h2>Цікаві факти про Луцький зоопарк</h2>
+            <ul>
+                <li>У зоопарку є понад 90 видів тварин!</li>
+                <li>Загальна кількість тварин — приблизно 500.</li>
+                <li>Заснований у 1979 році.</li>
+                <li>Першими тваринами були благородні олені, страуси та лебеді-шипуни.</li>
+                <li>У 2015 році проведено реконструкцію зоопарку, додано Wi-Fi та нові вольєри.</li>
+                <li>У 2018 році за вагомий внесок у розвиток економіки регіону КП «Луцький зоопарк» отримало Національний сертифікат «Компанія року».</li>
+                <li>З 2017 року Луцький зоопарк приєднався до міжнародної системи Species360.</li>
+            </ul>
+        </section>
+
+        <section id="animals">
+            <h2>Тварини Луцького зоопарку</h2>
+            <div class="animals-gallery">
+                <figure>
+                    <img src="https://www.lutskrada.gov.ua/sites/default/files/u107/14681586_865395813561767_6897493174881233794_n.jpg" alt="тигр">
+                    <figcaption>тигр</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://volyn.com.ua/content/thumbs/750x500/k/sw/d7kivi-jsbwxystjwm4nxi7cofyz6eyjedkdswk.jpg" alt="Лев">
+                    <figcaption>Лев</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9OjcVJdJLblYRYtrn_8HAzIaaMJltb7M0mg&s" alt="Павич">
+                    <figcaption>Павич</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://volyn.tabloyid.com/storage/cache/images/upload/news/1/old/5970/980x700-red-ear-tortil-02.webp" alt="черепахпа">
+                    <figcaption>черепаха</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="specific-animals">
+            <h2>Факти про деяких тварин</h2>
+            <ul>
+                <li><strong>Лев:</strong> Один із найстаріших мешканців зоопарку.</li>
+                <li><strong>тигр:</strong> привертає увагу відвідувачів.</li>
+                <li><strong>папуга:</strong> Улюбленець дітей, який навіть може говорити.</li>
+            </ul>
+        </section>
+
+        <section id="video">
+            <h2>Відео про Луцький зоопарк</h2>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/2p7AYe_Dyss?si=kxvzbjfusM1RQgqZ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section id="cost">
+            <h2>Ціни на квитки</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Категорія</th>
+                        <th>Ціна</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Дорослі</td>
+                        <td>100 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Діти (до 12 років)</td>
+                        <td>50 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Пільгові категорії</td>
+                        <td>Безкоштовно</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacts">
+            <h2>Контакти</h2>
+            <p>Наш номер телефону: <a href="tel:+380509913247">+38050 991 3247</a></p>
+            <p>Адреса: м. Луцьк, вул. Зоопаркова, 1</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Луцький зоопарк. Всі права захищено.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
